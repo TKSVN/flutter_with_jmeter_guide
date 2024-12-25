@@ -4,8 +4,8 @@
 
 ## Foreword
 
-Perhaps when performing a test scenario recording with JMeter for mobile applications in general, you have referred to one of the popular guides on the internet below:
-<https://medium.com/@viniciuscorrei/using-jmeter-to-record-test-scenarios-directly-from-mobile-applications-b5dc5bc48ef6>
+Perhaps when performing a test scenario recording with JMeter for mobile applications in general, you have referred to one of the popular guides on the internet below:  
+<https://medium.com/@viniciuscorrei/using-jmeter-to-record-test-scenarios-directly-from-mobile-applications-b5dc5bc48ef6>  
 <https://blogs.perficient.com/2021/08/25/perform-load-test-on-mobile-app-using-apache-jmeter/>
 
 And maybe, like us, even though you followed the instructions correctly, the result was that JMeter couldn't record the requests sent from the mobile app to your server.
@@ -16,7 +16,7 @@ So, what is the reason? After some time researching, we found the answer to this
 ### Root cause: Flutter uses Dart which is not proxy-aware
 
 The primary reason JMeter cannot record requests from your mobile app to the server is that Flutter uses Dart, which is not proxy-aware.
-JMeter operates by creating a proxy server, through which your mobile app connects to the internet. This setup allows JMeter to capture and record the requests sent by the mobile app.
+JMeter operates by creating a proxy server, through which your mobile app connects to the internet. This setup allows JMeter to capture and record the requests sent by the mobile app.  
 However, by default, Flutter apps do not use the proxy server configured in the system settings. As a result, configuring the proxy as instructed will have no effect on Flutter apps.
 
 ### Solution
