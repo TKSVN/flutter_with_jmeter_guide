@@ -15,7 +15,7 @@ So, what is the reason? After some time researching, we found the answer to this
 
 ### Root cause: Flutter uses Dart which is not proxy-aware
 
-The primary reason JMeter cannot record requests from your mobile app to the server is that Flutter uses Dart, which is not proxy-aware.
+The primary reason JMeter cannot record requests from your mobile app to the server is that Flutter uses Dart, which is not proxy-aware.  
 JMeter operates by creating a proxy server, through which your mobile app connects to the internet. This setup allows JMeter to capture and record the requests sent by the mobile app.  
 However, by default, Flutter apps do not use the proxy server configured in the system settings. As a result, configuring the proxy as instructed will have no effect on Flutter apps.
 
