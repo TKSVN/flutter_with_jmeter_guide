@@ -1,5 +1,7 @@
 <img src="https://tks.asia/wp-content/uploads/2022/01/logo-1024x337.png" alt="drawing" width="200"/>
 
+---
+
 # Hướng dẫn record test scenario với JMeter cho Flutter app
 
 ## Đặt vấn đề
