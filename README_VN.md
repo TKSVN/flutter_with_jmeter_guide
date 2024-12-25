@@ -4,25 +4,25 @@
 
 ## Đặt vấn đề
 
-Có lẽ khi thực hiện record test scenario với JMeter cho mobile nói chung, các bạn đã tham khảo 1 trong các hướng dẫn phổ biến trên internet dưới dây.
-<https://medium.com/@viniciuscorrei/using-jmeter-to-record-test-scenarios-directly-from-mobile-applications-b5dc5bc48ef6>
+Có lẽ khi thực hiện record test scenario với JMeter cho mobile nói chung, các bạn đã tham khảo 1 trong các hướng dẫn phổ biến trên internet dưới dây.  
+<https://medium.com/@viniciuscorrei/using-jmeter-to-record-test-scenarios-directly-from-mobile-applications-b5dc5bc48ef6>  
 <https://blogs.perficient.com/2021/08/25/perform-load-test-on-mobile-app-using-apache-jmeter/>
 
-Và có thể là các bạn cũng giống như chúng tôi, dù đã thực hiện đúng như hướng dẫn nhưng kết quả là JMeter không thể record được các request được gửi từ mobile app đến phía server của các bạn.
+Và có thể là các bạn cũng giống như chúng tôi, dù đã thực hiện đúng như hướng dẫn nhưng kết quả là JMeter không thể record được các request được gửi từ mobile app đến phía server của các bạn.  
 Vậy nguyên nhân là do đâu, sau một thời gian tìm hiểu thì chúng tôi đã có câu trả lời cho vấn đề này (Xem thêm chi tiết giải thích ở phía dưới)
 
 ## Xử lý vấn đề
 
 ### Nguyên nhân chính: Flutter sử dụng Dart và không phải proxy-aware
 
-Đúng vậy, nguyên nhân chính của việc JMeter không thể ghi nhận được các request từ mobile app của bạn đến server là việc Flutter sử dụng Dart và không phải là proxy-aware.
+Đúng vậy, nguyên nhân chính của việc JMeter không thể ghi nhận được các request từ mobile app của bạn đến server là việc Flutter sử dụng Dart và không phải là proxy-aware.  
 Vì cơ chế của JMeter là tạo ra 1 proxy server, sau đó mobile app của bạn sẽ kết nối tới internet thông qua prox server đó.
-Từ đó cho khả năng JMeter có thể record được các request mà mobile app gửi đi.
+Từ đó cho khả năng JMeter có thể record được các request mà mobile app gửi đi.  
 Tuy nhiên do Flutter app mặc định không sử dụng proxy server đã được cấu hình trong Settings của hệ thống vì vậy việc setting proxy theo hướng dẫn sẽ không có hiệu lực đối với Flutter app.
 
 ### Giải pháp
 
-Giải pháp đơn giản là ngoài việc thực hiện theo hướng dẫn thì các bạn cần chỉ định 1 cách tường minh setting proxy server cho Flutter app.
+Giải pháp đơn giản là ngoài việc thực hiện theo hướng dẫn thì các bạn cần chỉ định 1 cách tường minh setting proxy server cho Flutter app.  
 Dưới đây là hướng dẫn của chúng tôi dành cho việc sử dụng các thư viện kết nối tới server phổ biến trên Flutter
 
 #### `http`
