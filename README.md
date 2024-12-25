@@ -138,6 +138,7 @@ The simple solution is to explicitly configure the proxy server for the Flutter 
 ### Results on the example app which we provide
 
 1. Configure the proxy with the JMeter server
+
     ![Proxy setting](images/proxy_setting.png)
 
 1. Select a library and perform the request
