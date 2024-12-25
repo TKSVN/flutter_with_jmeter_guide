@@ -140,6 +140,7 @@ Dưới đây là hướng dẫn của chúng tôi dành cho việc sử dụng 
 ### Kết quả trên example app mà chúng tôi đã cung cấp
 
 1. Setting proxy với JMeter server
+
     ![Proxy setting](images/proxy_setting.png)
 
 1. Lựa chọn thư viện và thực hiện request
