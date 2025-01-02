@@ -2,8 +2,8 @@
 
 ---
 他の言語:  
-- [🇺🇸 English(US)](README.md)  
-- [🇻🇳 Vietnamese](README_VN.md)
+- [🇺🇸 英語(アメリカ)](README.md)  
+- [🇻🇳 ベトナム語](README_VN.md)
 
 # FlutterアプリのテストシナリオをJMeterで記録する方法
 
