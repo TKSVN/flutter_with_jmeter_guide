@@ -2,7 +2,7 @@
 
 ---
 
-In other languages:  
+Ngôn ngữ khác:  
 - [🇯🇵 日本語](README_JP.md)  
 - [🇺🇸 English(US)](README.md)
 
