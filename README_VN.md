@@ -2,6 +2,10 @@
 
 ---
 
+In other languages:  
+- [🇯🇵 日本語](README_JP.md)  
+- [🇺🇸 English(US)](README.md)
+
 # Hướng dẫn record test scenario với JMeter cho Flutter app
 
 ## Đặt vấn đề
