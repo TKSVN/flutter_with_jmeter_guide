@@ -3,7 +3,7 @@
 ---
 In other languages:  
 - [🇯🇵 日本語](README_JP.md)  
-- [🇻🇳 Vietnamese](README_VN.md)
+- [🇻🇳 Tiếng Việt](README_VN.md)
 
 # Guide to Recording Test Scenarios with JMeter for Flutter Apps
 
