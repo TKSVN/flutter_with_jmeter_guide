@@ -1,6 +1,9 @@
 <img src="https://tks.asia/wp-content/uploads/2022/01/logo-1024x337.png" alt="drawing" width="200"/>
 
 ---
+In other languages:  
+- [🇯🇵 日本語](README_JP.md)  
+- [🇻🇳 Vietnamese](README_VN.md)
 
 # Guide to Recording Test Scenarios with JMeter for Flutter Apps
 
